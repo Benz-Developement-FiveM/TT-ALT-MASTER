@@ -140,3 +140,10 @@ QBShared.Jobs = {
 		},
 	},
 }
+
+
+            -- Jobs Creator integration (jobs_creator)
+            RegisterNetEvent("jobs_creator:injectJobs", function(jobs)
+                QBShared.Jobs = jobs
+            end)
+        
