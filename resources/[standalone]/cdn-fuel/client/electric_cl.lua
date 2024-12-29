@@ -728,7 +728,7 @@ if Config.ElectricVehicleCharging then
 
     -- Target
     local TargetResource = Config.TargetResource
-    if Config.TargetResource == 'ox_target' then
+    if Config.TargetResource == 'qb-target' then
         TargetResource = 'qb-target'
     end
 

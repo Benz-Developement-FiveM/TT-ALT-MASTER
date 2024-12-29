@@ -10,7 +10,7 @@ Config.RewardItem = 'tosti'
 Config.Fuel = 'cdn-fuel'
 
 Config.DeliveryLocations = {
-    ['main'] = { label = 'GO Postal', coords = vector4(69.0862, 127.6753, 79.2123, 156.7736) },
+    ['main'] = { label = 'Job:GO Postal', coords = vector4(69.0862, 127.6753, 79.2123, 156.7736) },
     ['vehicleWithdraw'] = vector4(71.9318, 120.8389, 79.0823, 160.5110),
     ['vehicleDeposit'] = vector3(62.7282, 124.9846, 79.0926),
     ['stores'] = {} -- auto generated
@@ -22,53 +22,214 @@ Config.Vehicles = {
 
 Config.Products = {
     ['normal'] = {
-        --{ name = 'tosti',         price = 2,   amount = 50 },
+        { name = 'brownie1', price = 20, amount = 100 },
+        { name = 'brownie2', price = 20, amount = 100 },
+        { name = 'brownie3', price = 20, amount = 100 },
+        { name = 'brownie4', price = 20, amount = 100 },
+        { name = 'brownie5', price = 20, amount = 100 },
+        { name = 'brownie6', price = 20, amount = 100 },
+        { name = 'brownie7', price = 20, amount = 100 },
+        { name = 'health_bar', price = 20, amount = 100 },
+        { name = 'jail_breakers', price = 20, amount = 100 },
+        { name = 'natures_call', price = 20, amount = 100 },
+        { name = 'nerd_tats', price = 20, amount = 100 },
+        { name = 'oh_shitz_drops', price = 20, amount = 100 },
+        { name = 'skull_crushers', price = 20, amount = 100 },
+        { name = 'twerks_candy', price = 15, amount = 100 },
+        { name = 'snikkel_candy', price = 15, amount = 100 },
+        { name = 'tosti', price = 30, amount = 100 },
+        { name = 'sandwich', price = 30, amount = 100 },
+        { name = 'water_bottle', price = 20, amount = 100 },
+        { name = 'coffee', price = 20, amount = 100 },
+        { name = 'kurkakola', price = 20, amount = 100 },
+        { name = 'grapejuice', price = 20, amount = 100 },
+        { name = 'cranberry', price = 20, amount = 100 },
+        { name = 'water', price = 20, amount = 100 },
+        { name = 'watercup', price = 20, amount = 100 },
+        { name = 'blueberry-pom', price = 20, amount = 100 },
+        { name = 'tropical-guava', price = 20, amount = 100 },
+        { name = 'tropical-punch', price = 20, amount = 100 },
+        { name = 'sour-bubble', price = 20, amount = 100 },
+        { name = 'hemp-prickly', price = 20, amount = 100 },
+        { name = 'original', price = 20, amount = 100 },
+        { name = 'watermelon-punch', price = 20, amount = 100 },
+        { name = 'el-mango', price = 20, amount = 100 },
+        { name = 'barr-bubblegum', price = 20, amount = 100 },
+        { name = 'barr-shandy', price = 20, amount = 100 },
+        { name = 'icream-soda', price = 20, amount = 100 },
+        { name = 'irn-bru', price = 20, amount = 100 },
+        { name = 'jar_coffee', price = 20, amount = 100 },
+        { name = 'jar_goldroot_tea', price = 20, amount = 100 },
+        { name = 'jar_redtea', price = 20, amount = 100 },
+        { name = 'jar_river_water', price = 20, amount = 100 },
+        { name = 'jar_yukkajuice', price = 20, amount = 100 },
+        { name = 'mega_crush', price = 20, amount = 100 },
+        { name = 'yukka_glass', price = 20, amount = 100 },
+        { name = 'atom_junkie', price = 20, amount = 100 },
+        { name = 'tea', price = 20, amount = 100 },
     },
     ['liquor'] = {
-        --{ name = 'beer',    price = 7,  amount = 50 },
+        { name = 'beer', price = 40, amount = 100 },
+        { name = 'whiskey', price = 40, amount = 100 },
+        { name = 'vodka', price = 40, amount = 100 },
+        { name = 'wine', price = 40, amount = 100 },
+        { name = 'amaretto', price = 40, amount = 100 },
+        { name = 'amarone', price = 40, amount = 100 },
+        { name = 'ambeer', price = 40, amount = 100 },
+        { name = 'b52', price = 40, amount = 100 },
+        { name = 'barbera', price = 40, amount = 100 },
+        { name = 'bkamikaze', price = 40, amount = 100 },
+        { name = 'blarneys', price = 40, amount = 100 },
+        { name = 'blue_white_bottle', price = 40, amount = 100 },
+        { name = 'brussian', price = 40, amount = 100 },
+        { name = 'cappucc', price = 40, amount = 100 },
+        { name = 'grandpa_gin', price = 40, amount = 100 },
+        { name = 'grandpa_moonshine', price = 40, amount = 100 },
+        { name = 'grandpa_whiskey', price = 40, amount = 100 },
+        { name = 'jar_beer', price = 40, amount = 100 },
+    },    
+    ['catcafe'] = {
+        { name = 'uwu_bubbleteablueberry', price = 35, amount = 100 },
+        { name = 'uwu_bubbletearose', price = 35, amount = 100 },
+        { name = 'uwu_bubbleteamint', price = 35, amount = 100 },
+        { name = 'uwu_matchatea', price = 35, amount = 100 },
+        { name = 'ccookie', price = 35, amount = 100 },
+        { name = 'uwupancake', price = 35, amount = 100 },
+        { name = 'uwucupcake', price = 35, amount = 100 },
+        { name = 'uwuvanillasandy', price = 35, amount = 100 },
+        { name = 'uwuchocsandy', price = 35, amount = 100 },
+        { name = 'uwubudhabowl', price = 35, amount = 100 },
+        { name = 'uwusushi', price = 35, amount = 100 },
+        { name = 'uwubentobox', price = 35, amount = 100 },
+        { name = 'uwu_misosoup', price = 35, amount = 100 },
     },
+    ['burgershot'] = {
+        { name = 'bs-milkshake', price = 30, amount = 100 },
+        { name = 'shotnuggets', price = 30, amount = 100 },
+        { name = 'shotrings', price = 30, amount = 100 },
+        { name = 'heartstopper', price = 30, amount = 100 },
+        { name = 'shotfries', price = 30, amount = 100 },
+        { name = 'moneyshot', price = 30, amount = 100 },
+        { name = 'meatfree', price = 30, amount = 100 },
+        { name = 'bleeder', price = 30, amount = 100 },
+        { name = 'torpedo', price = 30, amount = 100 },
+        { name = 'rimjob', price = 30, amount = 100 },
+    },
+    ['realfood'] = {
+        { name = 'creampie', price = 55, amount = 100 },
+        { name = 'cheesewrap', price = 55, amount = 100 },
+        { name = 'chickenwrap', price = 55, amount = 100 },
+        { name = 'cheese_burger_fries', price = 55, amount = 100 },
+        { name = 'chicken_caesar_wrap', price = 55, amount = 100 },
+        { name = 'greek_veggie_wrap', price = 55, amount = 100 },
+        { name = 'spicy_chicken_wrap', price = 55, amount = 100 },
+        { name = 'chicken_stips', price = 55, amount = 100 },
+        { name = 'french_toast_bacon', price = 55, amount = 100 },
+        { name = 'grilled_cheese_fries', price = 55, amount = 100 },
+        { name = 'pbj', price = 55, amount = 100 },
+        { name = 'scrambled_egg', price = 55, amount = 100 },
+        { name = 'sirloin_burger', price = 55, amount = 100 },
+        { name = 'steakncheese', price = 55, amount = 100 },
+        { name = 'bacon_cheese_fries', price = 55, amount = 100 },
+        { name = 'hot_wings', price = 55, amount = 100 },
+        { name = 'fries', price = 55, amount = 100 },
+        { name = 'sirloin_steak', price = 55, amount = 100 },
+        { name = 'steak', price = 55, amount = 100 },
+        { name = 'salad', price = 55, amount = 100 },
+        { name = 'bacon_eggs', price = 55, amount = 100 },
+        { name = 'blueberry_pie', price = 55, amount = 100 },
+        { name = 'canned_chicken_soup', price = 55, amount = 100 },
+        { name = 'soup_miso', price = 45, amount = 100 },
+        { name = 'spaghetti', price = 45, amount = 100 },
+        { name = 'steak_potato', price = 45, amount = 100 },
+        { name = 'stew_vegetable', price = 45, amount = 100 },
+        { name = 'tuna_toast', price = 45, amount = 100 },
+        { name = 'yucca_fruit', price = 45, amount = 100 },
+        { name = 'tofu', price = 45, amount = 100 },
+        { name = 'tapiokaballs', price = 45, amount = 100 },
+        { name = 'canned_country_soup', price = 55, amount = 100 },
+        { name = 'canned_pears', price = 55, amount = 100 },
+        { name = 'canned_peas', price = 55, amount = 100 },
+        { name = 'canned_salmon', price = 55, amount = 100 },
+        { name = 'canned_tuna', price = 55, amount = 100 },
+        { name = 'chilli_bowl', price = 55, amount = 100 },
+        { name = 'chilli_dog', price = 55, amount = 100 },
+        { name = 'corn_bread', price = 55, amount = 100 },
+        { name = 'corn_on_hob', price = 55, amount = 100 },
+        { name = 'fish_taco', price = 55, amount = 100 },
+        { name = 'grilled_meat', price = 55, amount = 100 },
+        { name = 'gumbo_stew', price = 55, amount = 100 },
+        { name = 'meat_stew', price = 55, amount = 100 },
+        { name = 'meow_chow', price = 55, amount = 100 },
+        { name = 'pumpkin_bread', price = 55, amount = 100 },
+        { name = 'pumpkin_cheesecake', price = 55, amount = 100 },
+        { name = 'pumpkinpie_slice', price = 55, amount = 100 },
+        { name = 'ravioli', price = 55, amount = 100 },
+        { name = 'sham', price = 55, amount = 100 },
+        { name = 'sham_chowder', price = 55, amount = 100 },
+        { name = 'sham_sandwich', price = 55, amount = 100 },
+        { name = 'shephards_pie', price = 55, amount = 100 },
+    },
+
     ['hardware'] = {
-        --{ name = 'repairkit',         price = 250, amount = 50, requiredJob = { 'mechanic', 'police' } },
-    },
-    ['weedshop'] = {
-        --{ name = 'joint',          price = 10,  amount = 50 },
-    },
-    ['gearshop'] = {
-        --{ name = 'diving_gear', price = 2500, amount = 10 },
-    },
-    ['leisureshop'] = {
-        --{ name = 'parachute',   price = 2500, amount = 10 },
-    },
-    ['weapons'] = {
-        --{ name = 'weapon_knife',         price = 250,  amount = 250 },
-        --{ name = 'pistol_ammo',          price = 250,  amount = 250, requiredLicense = 'weapon' },
-    },
-    ['blackmarket'] = {
-        --{ name = 'security_card_01',  price = 5000, amount = 50 },
-        --{ name = 'markedbills',       price = 5000, amount = 50, info = { worth = 5000 } },
-    },
-    ['prison'] = {
-        --{ name = 'sandwich',     price = 4, amount = 50 },
-        --{ name = 'water_bottle', price = 4, amount = 50 },
-    },
-    ['police'] = {
-        --{ name = 'weapon_smg',          price = 0, amount = 50, info = { attachments = { { component = 'COMPONENT_AT_SCOPE_MACRO_02', label = '1x Scope' }, { component = 'COMPONENT_AT_AR_FLSH', label = 'Flashlight' } } } },
-        --{ name = 'weapon_carbinerifle', price = 0, amount = 50, info = { attachments = { { component = 'COMPONENT_AT_AR_FLSH', label = 'Flashlight' }, { component = 'COMPONENT_AT_SCOPE_MEDIUM', label = '3x Scope' } } } },
-        --{ name = 'weapon_nightstick',   price = 0, amount = 50 },
+        { name = 'repairkit', price = 300, amount = 100 },
+        { name = 'cleaningkit', price = 300, amount = 100 },
+        { name = 'skateboard', price = 300, amount = 100 },
+        { name = 'parachute', price = 300, amount = 100 },
+        { name = 'binoculars', price = 300, amount = 100 },
+        { name = 'diving_gear', price = 300, amount = 100 },
+        { name = 'diving_fill', price = 300, amount = 100 },
+        { name = 'bandage', price = 300, amount = 100 },
+        { name = 'basketball', price = 300, amount = 100 },
+        { name = 'basketball_hoop', price = 300, amount = 100 },
+        { name = 'fishingrod', price = 300, amount = 100 },
+        { name = 'fishbait', price = 300, amount = 100 },
+        { name = 'gameboy', price = 300, amount = 100 },
+        { name = 'radiocar_dismounter', price = 300, amount = 100 },
+        { name = 'radiocar', price = 300, amount = 100 },
+        { name = 'radiocar_blue', price = 300, amount = 100 },
 
     },
-    ['ambulance'] = {
-        --{ name = 'radio',                   price = 0, amount = 50 },
-    },
-    ['mechanic'] = {
-        --{ name = 'veh_toolbox',       price = 5000, amount = 50 },
-    }
+    ['mining'] = {
+        { name = 'goldpan', price = 50, amount = 100 },
+        { name = 'pickaxe', price = 350, amount = 100 },
+        { name = 'miningdrill', price = 5000, amount = 100 },
+        { name = 'mininglaser', price = 50000, amount = 100 },
+        { name = 'drillbit', price = 1, amount = 100 },
+    }, 
+    ['weedshop'] = {
+        { name = 'empty_weed_bag', price = 20, amount = 100 },
+        { name = 'rollingpapers', price = 10, amount = 100 },
+        { name = 'lighter', price = 8, amount = 100 },
+        { name = 'drug_grinder', price = 25, amount = 100 },
+        { name = 'trowel', price = 50, amount = 100 },
+        { name = 'weed_water', price = 10, amount = 100 },
+        { name = 'weed_fertilizer', price = 20, amount = 100 },
+        { name = 'drug_shears', price = 60, amount = 100 },
+        { name = 'drug_scales', price = 75, amount = 100 },
+        { name = 'weed_skunk_seed_m', price = 40, amount = 100 },
+        { name = 'weed_skunk_seed_f', price = 30, amount = 100 },
+        { name = 'weed_og-kush_seed_m', price = 40, amount = 100 },
+        { name = 'weed_og-kush_seed_f', price = 30, amount = 100 },
+        { name = 'weed_white-widow_seed_m', price = 40, amount = 100 },
+        { name = 'weed_white-widow_seed_f', price = 30, amount = 100 },
+        { name = 'weed_ak47_seed_m', price = 40, amount = 100 },
+        { name = 'weed_ak47_seed_f', price = 30, amount = 100 },
+        { name = 'weed_amnesia_seed_m', price = 40, amount = 100 },
+        { name = 'weed_amnesia_seed_f', price = 30, amount = 100 },
+        { name = 'weed_purple-haze_seed_m', price = 40, amount = 100 },
+        { name = 'weed_purple-haze_seed_f', price = 30, amount = 100 },
+        { name = 'weed_gelato_seed_m', price = 40, amount = 100 },
+        { name = 'weed_gelato_seed_f', price = 30, amount = 100 },
+        { name = 'weed_zkittlez_seed_m', price = 40, amount = 100 },
+        { name = 'weed_zkittlez_seed_f', price = 30, amount = 100 },
+    }, 
 }
 
 Config.Locations = {
     -- 24/7 Locations
     ['247supermarket'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(24.47, -1346.62, 29.5, 271.66),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -85,7 +246,7 @@ Config.Locations = {
     },
 
     ['247supermarket2'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(-3039.54, 584.38, 7.91, 17.27),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -101,7 +262,7 @@ Config.Locations = {
     },
 
     ['247supermarket3'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(-3242.97, 1000.01, 12.83, 357.57),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -117,7 +278,7 @@ Config.Locations = {
     },
 
     ['247supermarket4'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(1728.07, 6415.63, 35.04, 242.95),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -133,7 +294,7 @@ Config.Locations = {
     },
 
     ['247supermarket5'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(1959.82, 3740.48, 32.34, 301.57),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -149,7 +310,7 @@ Config.Locations = {
     },
 
     ['247supermarket6'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(549.13, 2670.85, 42.16, 99.39),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -165,7 +326,7 @@ Config.Locations = {
     },
 
     ['247supermarket7'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(2677.47, 3279.76, 55.24, 335.08),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -181,7 +342,7 @@ Config.Locations = {
     },
 
     ['247supermarket8'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(2556.66, 380.84, 108.62, 356.67),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -197,7 +358,7 @@ Config.Locations = {
     },
 
     ['247supermarket9'] = {
-        ['label'] = '24/7 Supermarket',
+        ['label'] = 'Shop:24/7 Supermarket',
         ['coords'] = vector4(372.66, 326.98, 103.57, 253.73),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -214,7 +375,7 @@ Config.Locations = {
 
     -- LTD Gasoline Locations
     ['ltdgasoline'] = {
-        ['label'] = 'LTD Gasoline',
+        ['label'] = 'Shop:LTD Gasoline',
         ['coords'] = vector4(-47.02, -1758.23, 29.42, 45.05),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -230,7 +391,7 @@ Config.Locations = {
     },
 
     ['ltdgasoline2'] = {
-        ['label'] = 'LTD Gasoline',
+        ['label'] = 'Shop:LTD Gasoline',
         ['coords'] = vector4(-706.06, -913.97, 19.22, 88.04),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -246,7 +407,7 @@ Config.Locations = {
     },
 
     ['ltdgasoline3'] = {
-        ['label'] = 'LTD Gasoline',
+        ['label'] = 'Shop:LTD Gasoline',
         ['coords'] = vector4(-1820.02, 794.03, 138.09, 135.45),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -262,7 +423,7 @@ Config.Locations = {
     },
 
     ['ltdgasoline4'] = {
-        ['label'] = 'LTD Gasoline',
+        ['label'] = 'Shop:LTD Gasoline',
         ['coords'] = vector4(1164.71, -322.94, 69.21, 101.72),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -278,7 +439,7 @@ Config.Locations = {
     },
 
     ['ltdgasoline5'] = {
-        ['label'] = 'LTD Gasoline',
+        ['label'] = 'Shop:LTD Gasoline',
         ['coords'] = vector4(1697.87, 4922.96, 42.06, 324.71),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -295,7 +456,7 @@ Config.Locations = {
 
     -- Rob's Liquor Locations
     ['robsliquor'] = {
-        ['label'] = 'Rob\'s Liqour',
+        ['label'] = 'Shop:Rob\'s Liqour',
         ['coords'] = vector4(-1221.58, -908.15, 12.33, 35.49),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -311,7 +472,7 @@ Config.Locations = {
     },
 
     ['robsliquor2'] = {
-        ['label'] = 'Rob\'s Liqour',
+        ['label'] = 'Shop:Rob\'s Liqour',
         ['coords'] = vector4(-1486.59, -377.68, 40.16, 139.51),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -327,7 +488,7 @@ Config.Locations = {
     },
 
     ['robsliquor3'] = {
-        ['label'] = 'Rob\'s Liqour',
+        ['label'] = 'Shop:Rob\'s Liqour',
         ['coords'] = vector4(-2966.39, 391.42, 15.04, 87.48),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -343,7 +504,7 @@ Config.Locations = {
     },
 
     ['robsliquor4'] = {
-        ['label'] = 'Rob\'s Liqour',
+        ['label'] = 'Shop:Rob\'s Liqour',
         ['coords'] = vector4(1165.17, 2710.88, 38.16, 179.43),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -359,7 +520,7 @@ Config.Locations = {
     },
 
     ['robsliquor5'] = {
-        ['label'] = 'Rob\'s Liqour',
+        ['label'] = 'Shop:Rob\'s Liqour',
         ['coords'] = vector4(1134.2, -982.91, 46.42, 277.24),
         ['ped'] = 'mp_m_shopkeep_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
@@ -376,11 +537,11 @@ Config.Locations = {
 
     -- Hardware Store Locations
     ['hardware'] = {
-        ['label'] = 'Hardware Store',
-        ['coords'] = vector4(45.68, -1749.04, 29.61, 53.13),
+        ['label'] = 'Shop:Hardware Store',
+        ['coords'] = vector4(2736.85, 3462.27, 55.7, 338.14),
         ['ped'] = 'mp_m_waremech_01',
         ['scenario'] = 'WORLD_HUMAN_CLIPBOARD',
-        ['radius'] = 1.5,
+        ['radius'] = 2.5,
         ['targetIcon'] = 'fas fa-wrench',
         ['targetLabel'] = 'Open Hardware Store',
         ['products'] = Config.Products['hardware'],
@@ -390,70 +551,36 @@ Config.Locations = {
         ['blipcolor'] = 0,
         ['delivery'] = vector4(89.15, -1745.29, 30.09, 315.25)
     },
-
-    ['hardware2'] = {
-        ['label'] = 'Hardware Store',
-        ['coords'] = vector4(2747.71, 3472.85, 55.67, 255.08),
+    -- Mining Store Locations
+    ['mining'] = {
+        ['label'] = 'Shop:Mining Store',
+        ['coords'] = vector4(2741.31, 3464.15, 55.7, 71.24),
         ['ped'] = 'mp_m_waremech_01',
         ['scenario'] = 'WORLD_HUMAN_CLIPBOARD',
-        ['radius'] = 1.5,
+        ['radius'] = 2.5,
         ['targetIcon'] = 'fas fa-wrench',
-        ['targetLabel'] = 'Open Hardware Store',
-        ['products'] = Config.Products['hardware'],
+        ['targetLabel'] = 'Open Mining Store',
+        ['products'] = Config.Products['mining'],
         ['showblip'] = true,
         ['blipsprite'] = 402,
         ['blipscale'] = 0.8,
         ['blipcolor'] = 0,
-        ['delivery'] = vector4(2704.68, 3457.21, 55.54, 176.28)
+        ['delivery'] = vector4(89.15, -1745.29, 30.09, 315.25)
     },
-
-    ['hardware3'] = {
-        ['label'] = 'Hardware Store',
-        ['coords'] = vector4(-421.83, 6136.13, 31.88, 228.2),
+        -- weedshop Store Locations
+    ['weedshop'] = {
+        ['label'] = 'Shop:weedshop',
+        ['coords'] = vector4(-1171.22, -1571.11, 4.66, 128.3),
         ['ped'] = 'mp_m_waremech_01',
         ['scenario'] = 'WORLD_HUMAN_CLIPBOARD',
-        ['radius'] = 1.5,
+        ['radius'] = 2.5,
         ['targetIcon'] = 'fas fa-wrench',
-        ['targetLabel'] = 'Hardware Store',
-        ['products'] = Config.Products['hardware'],
+        ['targetLabel'] = 'Open weedshop',
+        ['products'] = Config.Products['weedshop'],
         ['showblip'] = true,
         ['blipsprite'] = 402,
         ['blipscale'] = 0.8,
         ['blipcolor'] = 0,
-        ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
-    },
-
-    -- Sea Word Locations
-    ['seaword'] = {
-        ['label'] = 'Sea Word',
-        ['coords'] = vector4(-1687.03, -1072.18, 13.15, 52.93),
-        ['ped'] = 'a_m_y_beach_01',
-        ['scenario'] = 'WORLD_HUMAN_STAND_IMPATIENT',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-fish',
-        ['targetLabel'] = 'Sea Word',
-        ['products'] = Config.Products['gearshop'],
-        ['showblip'] = true,
-        ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
-        ['blipcolor'] = 0,
-        ['delivery'] = vector4(-1674.18, -1073.7, 13.15, 333.56)
-    },
-
-    -- Leisure Shop Locations
-    ['leisureshop'] = {
-        ['label'] = 'Leisure Shop',
-        ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
-        ['ped'] = 'a_m_y_beach_01',
-        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-leaf',
-        ['targetLabel'] = 'Open Leisure Shop',
-        ['products'] = Config.Products['leisureshop'],
-        ['showblip'] = true,
-        ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
-        ['blipcolor'] = 0,
-        ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
+        ['delivery'] = vector4(-1175.5, -1571.3, 4.36, 135.34)
     },
 }

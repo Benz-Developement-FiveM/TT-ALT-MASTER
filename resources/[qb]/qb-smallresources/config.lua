@@ -1,7 +1,7 @@
 Config = {}
 
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
-Config.PauseMapText = ''                                     -- Text shown above the map when ESC is pressed. If left empty 'FiveM' will appear
+Config.PauseMapText = 'TRANSPORT SIMULATOR 2025'                                     -- Text shown above the map when ESC is pressed. If left empty 'FiveM' will appear
 Config.HarnessUses = 20
 Config.DamageNeeded = 100.0                                  -- amount of damage till you can push your vehicle. 0-1000
 Config.Logging = 'discord'                                   -- fivemanage
@@ -28,14 +28,14 @@ Config.Binoculars = {
 }
 
 Config.AIResponse = {
-    wantedLevels = false, -- if true, you will recieve wanted levels
+    wantedLevels = true, -- if true, you will recieve wanted levels
     dispatchServices = {  -- AI dispatch services
-        [1] = false,      -- Police Vehicles
-        [2] = false,      -- Police Helicopters
-        [3] = false,      -- Fire Department Vehicles
+        [1] = true,      -- Police Vehicles
+        [2] = true,      -- Police Helicopters
+        [3] = true,      -- Fire Department Vehicles
         [4] = false,      -- Swat Vehicles
-        [5] = false,      -- Ambulance Vehicles
-        [6] = false,      -- Police Motorcycles
+        [5] = true,      -- Ambulance Vehicles
+        [6] = true,      -- Police Motorcycles
         [7] = false,      -- Police Backup
         [8] = false,      -- Police Roadblocks
         [9] = false,      -- PoliceAutomobileWaitPulledOver
@@ -50,23 +50,19 @@ Config.AIResponse = {
 
 -- To Set This Up visit https://forum.cfx.re/t/how-to-updated-discord-rich-presence-custom-image/157686
 Config.Discord = {
-    isEnabled = false,                                     -- If set to true, then discord rich presence will be enabled
-    applicationId = '00000000000000000',                   -- The discord application id
+    isEnabled = true,                                     -- If set to true, then discord rich presence will be enabled
+    applicationId = '1318691385917964352',                   -- The discord application id
     iconLarge = 'logo_name',                               -- The name of the large icon
-    iconLargeHoverText = 'This is a Large icon with text', -- The hover text of the large icon
+    iconLargeHoverText = 'Transport Simulator 2025', -- The hover text of the large icon
     iconSmall = 'small_logo_name',                         -- The name of the small icon
-    iconSmallHoverText = 'This is a Small icon with text', -- The hover text of the small icon
-    updateRate = 60000,                                    -- How often the player count should be updated
+    iconSmallHoverText = 'TS25', -- The hover text of the small icon
+    updateRate = 30000,                                    -- How often the player count should be updated
     showPlayerCount = true,                                -- If set to true the player count will be displayed in the rich presence
-    maxPlayers = 48,                                       -- Maximum amount of players
+    maxPlayers = 32,                                       -- Maximum amount of players
     buttons = {
         {
-            text = 'First Button!',
-            url = 'fivem://connect/localhost:30120'
-        },
-        {
-            text = 'Second Button!',
-            url = 'fivem://connect/localhost:30120'
+            text = 'TS25 Discord',
+            url = 'https://discord.gg/jaah866Vj3'
         }
     }
 }
@@ -76,39 +72,223 @@ Config.Density = {
     vehicle = 0.8,
     multiplier = 0.8,
     peds = 0.8,
-    scenario = 0.8
+    scenario = 0.1
 }
 
 Config.Disable = {
     hudComponents = { 1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22 }, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
     controls = { 37 },                                            -- Controls: https://docs.fivem.net/docs/game-references/controls/
-    displayAmmo = true,                                           -- false disables ammo display
+    displayAmmo = false,                                           -- false disables ammo display
     ambience = false,                                             -- disables distance sirens, distance car alarms, flight music, etc
-    idleCamera = true,                                            -- disables the idle cinematic camera
+    idleCamera = false,                                            -- disables the idle cinematic camera
     vestDrawable = false,                                         -- disables the vest equipped when using heavy armor
-    pistolWhipping = true,                                        -- disables pistol whipping
+    pistolWhipping = false,                                        -- disables pistol whipping
     driveby = false,                                              -- disables driveby
 }
 
 Config.RelieveWeedStress = math.random(15, 20) -- stress relief amount (100 max)
 
 Config.Consumables = {
-    eat = { -- default food items
-        ['sandwich'] = math.random(35, 54),
-        ['tosti'] = math.random(40, 50),
-        ['twerks_candy'] = math.random(35, 54),
-        ['snikkel_candy'] = math.random(40, 50)
-    },
-    drink = { -- default drink items
-        ['water_bottle'] = math.random(35, 54),
-        ['kurkakola'] = math.random(35, 54),
-        ['coffee'] = math.random(40, 50)
-    },
-    alcohol = { -- default alcohol items
-        ['whiskey'] = math.random(20, 30),
-        ['beer'] = math.random(30, 40),
-        ['vodka'] = math.random(20, 40),
-    },
+    eat = {
+        ['tosti'] = math.random(25, 35),
+        ['sandwich'] = math.random(25, 35),
+        ['grape'] = math.random(25, 35),
+        ['uwu_misosoup'] = math.random(25, 35),
+        ['cranberry'] = math.random(25, 35),
+        ['shotnuggets'] = math.random(25, 35),
+        ['shotrings'] = math.random(25, 35),
+        ['heartstopper'] = math.random(25, 35),
+        ['shotfries'] = math.random(25, 35),
+        ['moneyshot'] = math.random(25, 35),
+        ['meatfree'] = math.random(25, 35),
+        ['bleeder'] = math.random(25, 35),
+        ['torpedo'] = math.random(25, 35),
+        ['rimjob'] = math.random(25, 35),
+        ['creampie'] = math.random(25, 35),
+        ['cheesewrap'] = math.random(25, 35),
+        ['chickenwrap'] = math.random(25, 35),
+        ['uwupancake'] = math.random(25, 35),
+        ['uwucupcake'] = math.random(25, 35),
+        ['uwuvanillasandy'] = math.random(25, 35),
+        ['uwuchocsandy'] = math.random(25, 35),
+        ['uwubudhabowl'] = math.random(25, 35),
+        ['uwusushi'] = math.random(25, 35),
+        ['uwumisosoup'] = math.random(25, 35),
+        ['uwubentobox'] = math.random(25, 35),
+        ['cheese_burger_fries'] = math.random(25, 35),
+        ['chicken_caesar_wrap'] = math.random(25, 35),
+        ['greek_veggie_wrap'] = math.random(25, 35),
+        ['spicy_chicken_wrap'] = math.random(25, 35),
+        ['chicken_stips'] = math.random(25, 35),
+        ['french_toast_bacon'] = math.random(25, 35),
+        ['grilled_cheese_fries'] = math.random(25, 35),
+        ['pbj'] = math.random(25, 35),
+        ['scrambled_egg'] = math.random(25, 35),
+        ['sirloin_burger'] = math.random(25, 35),
+        ['steakncheese'] = math.random(25, 35),
+        ['bacon_cheese_fries'] = math.random(25, 35),
+        ['hot_wings'] = math.random(25, 35),
+        ['eggs'] = math.random(25, 35),
+        ['jam'] = math.random(25, 35),
+        ['peanut_butter'] = math.random(25, 35),
+        ['bread'] = math.random(25, 35),
+        ['fries'] = math.random(25, 35),
+        ['veggie'] = math.random(25, 35),
+        ['sirloin_steak'] = math.random(25, 35),
+        ['steak'] = math.random(25, 35),
+        ['salad'] = math.random(25, 35),
+        ['wraps'] = math.random(25, 35),
+        ['wrap'] = math.random(25, 35),
+        ['brownie1'] = math.random(25, 35),
+        ['brownie2'] = math.random(25, 35),
+        ['brownie3'] = math.random(25, 35),
+        ['brownie4'] = math.random(25, 35),
+        ['brownie5'] = math.random(25, 35),
+        ['brownie6'] = math.random(25, 35),
+        ['brownie7'] = math.random(25, 35),
+        ['bacon_eggs'] = math.random(25, 35),
+        ['blueberries'] = math.random(25, 35),
+        ['blueberry_pie'] = math.random(25, 35),
+        ['boiled_meat'] = math.random(25, 35),
+        ['burned_meat'] = math.random(25, 35),
+        ['canned_chicken_soup'] = math.random(25, 35),
+        ['canned_country_soup'] = math.random(25, 35),
+        ['canned_pears'] = math.random(25, 35),
+        ['canned_peas'] = math.random(25, 35),
+        ['canned_salmon'] = math.random(25, 35),
+        ['canned_tuna'] = math.random(25, 35),
+        ['chilli_bowl'] = math.random(25, 35),
+        ['chilli_dog'] = math.random(25, 35),
+        ['corn_bread'] = math.random(25, 35),
+        ['corn_on_hob'] = math.random(25, 35),
+        ['egg_boiled'] = math.random(25, 35),
+        ['fish_taco'] = math.random(25, 35),
+        ['grilled_meat'] = math.random(25, 35),
+        ['gumbo_stew'] = math.random(25, 35),
+        ['meat_stew'] = math.random(25, 35),
+        ['meow_chow'] = math.random(25, 35),
+        ['mushroom'] = math.random(25, 35),
+        ['potato'] = math.random(25, 35),
+        ['pumpkin_bread'] = math.random(25, 35),
+        ['pumpkin_cheesecake'] = math.random(25, 35),
+        ['pumpkinpie_slice'] = math.random(25, 35),
+        ['ration_beef'] = math.random(25, 35),
+        ['ration_chicken'] = math.random(25, 35),
+        ['ration_lamb'] = math.random(25, 35),
+        ['ravioli'] = math.random(25, 35),
+        ['sham'] = math.random(25, 35),
+        ['sham_chowder'] = math.random(25, 35),
+        ['sham_sandwich'] = math.random(25, 35),
+        ['shephards_pie'] = math.random(25, 35),
+        ['soup_miso'] = math.random(25, 35),
+        ['spaghetti'] = math.random(25, 35),
+        ['stash_chilli'] = math.random(25, 35),
+        ['steak_potato'] = math.random(25, 35),
+        ['stew_vegetable'] = math.random(25, 35),
+        ['tuna_toast'] = math.random(25, 35),
+        ['yucca_fruit'] = math.random(25, 35),
+        ['pumpkin'] = math.random(25, 35),
+        ['tapiokaballs'] = math.random(25, 35),
+        ['tofu'] = math.random(25, 35),
+        ['th_beef_burrito'] = math.random(15, 25),
+        ['th_beef_enchilada'] = math.random(15, 25),
+        ['th_beef_taco'] = math.random(15, 25),
+        ['th_chicken_burrito'] = math.random(15, 25),
+        ['th_chicken_caesar_wrap'] = math.random(15, 25),
+        ['th_chicken_taco'] = math.random(15, 25),
+        ['th_greek_veggie_wrap'] = math.random(15, 25),
+        ['th_nachos'] = math.random(15, 25),
+        ['th_quesadilla'] = math.random(15, 25),
+        ['th_tortilla_chips'] = math.random(15, 25),
+        ['th_oranges'] = math.random(15, 25),
+        ['orange'] = math.random(5, 10),
+        ['pineapple'] = math.random(5, 10),
+        ['tomato'] = math.random(5, 10),
+        ['strawberry'] = math.random(5, 10),
+        ['casino_burger'] = math.random(15, 25),
+        ['casino_chips'] = math.random(15, 25),
+        ['casino_donut'] = math.random(15, 25),
+        ['casino_sandwitch'] = math.random(15, 25),
+    
+    
+        ['twerks_candy'] = math.random(10, 15),
+        ['snikkel_candy'] = math.random(10, 15),
+        ['ccookie'] = math.random(10, 15),
+        ['eye_kandy'] = math.random(10, 15),
+        ['health_bar'] = math.random(10, 15),
+        ['hackers'] = math.random(10, 15),
+        ['honey'] = math.random(10, 15),
+        ['jail_breakers'] = math.random(10, 15),
+        ['natures_call'] = math.random(10, 15),
+        ['nerd_tats'] = math.random(10, 15),
+        ['oh_shitz_drops'] = math.random(10, 15),
+        ['skull_crushers'] = math.random(10, 15),
+        ['sugar_butts'] = math.random(10, 15),
+        ['casino_ego_chaser'] = math.random(10, 15),
+        ['casino_psqs'] = math.random(10, 15),
+        },
+    drink = {
+        ['water_bottle'] = math.random(15, 25),
+        ['coffee'] = math.random(15, 25),
+        ['kurkakola'] = math.random(15, 25),
+        ['grapejuice'] = math.random(15, 25),
+        ['uwu_bubbleteablueberry'] = math.random(15, 25),
+        ['uwu_bubbletearose'] = math.random(15, 25),
+        ['uwu_bubbleteamint'] = math.random(15, 25),
+        ['uwu_matchatea'] = math.random(15, 25),
+        ['bs-milkshake'] = math.random(15, 25),
+        ['water'] = math.random(15, 25),
+        ['watercup'] = math.random(15, 25),
+        ['blueberry-pom'] = math.random(15, 25),
+        ['tropical-guava'] = math.random(15, 25),
+        ['tropical-punch'] = math.random(15, 25),
+        ['sour-bubble'] = math.random(15, 25),
+        ['hemp-prickly'] = math.random(15, 25),
+        ['original'] = math.random(15, 25),
+        ['watermelon-punch'] = math.random(15, 25),
+        ['el-mango'] = math.random(15, 25),
+        ['barr-bubblegum'] = math.random(15, 25),
+        ['barr-shandy'] = math.random(15, 25),
+        ['icream-soda'] = math.random(15, 25),
+        ['irn-bru'] = math.random(15, 25),
+        ['jar_coffee'] = math.random(15, 25),
+        ['jar_goldroot_tea'] = math.random(15, 25),
+        ['jar_redtea'] = math.random(15, 25),
+        ['jar_river_water'] = math.random(15, 25),
+        ['jar_yukkajuice'] = math.random(15, 25),
+        ['mega_crush'] = math.random(15, 25),
+        ['yukka_glass'] = math.random(15, 25),
+        ['atom_junkie'] = math.random(15, 25),
+        ['tea'] = math.random(15, 25),
+        ['th_ecola'] = math.random(15, 25),
+        ['th_sprunk'] = math.random(15, 25),
+        ['th_orangotang'] = math.random(15, 25),
+        ['th_carbonated_water'] = math.random(15, 25),
+        ['casino_coffee'] = math.random(15, 25),
+        ['casino_coke'] = math.random(15, 25),
+        ['casino_luckypotion'] = math.random(15, 25),
+        ['casino_sprite'] = math.random(15, 25),
+        },
+    alcohol = {
+        ['beer'] = math.random(15, 25),
+        ['whiskey'] = math.random(15, 25),
+        ['vodka'] = math.random(15, 25),
+        ['wine'] = math.random(15, 25),
+        ['amaretto'] = math.random(15, 25),
+        ['amarone'] = math.random(15, 25),
+        ['ambeer'] = math.random(15, 25),
+        ['b52'] = math.random(15, 25),
+        ['barbera'] = math.random(15, 25),
+        ['bkamikaze'] = math.random(15, 25),
+        ['blue_white_bottle'] = math.random(15, 25),
+        ['brussian'] = math.random(15, 25),
+        ['cappucc'] = math.random(15, 25),
+        ['grandpa_gin'] = math.random(15, 25),
+        ['grandpa_moonshine'] = math.random(15, 25),
+        ['grandpa_whiskey'] = math.random(15, 25),
+        ['jar_beer'] = math.random(15, 25),
+        ['casino_beer'] = math.random(15, 25),
+        },
     custom = { -- put any custom items here
         -- ['newitem'] = {
         --     progress = {
@@ -165,10 +345,10 @@ Config.BlacklistedScenarios = {
 }
 
 Config.BlacklistedVehs = {
-    [`shamal`] = true,
-    [`luxor`] = true,
+    [`shamal`] = false,
+    [`luxor`] = false,
     [`luxor2`] = true,
-    [`jet`] = true,
+    [`jet`] = false,
     [`lazer`] = true,
     [`buzzard`] = true,
     [`buzzard2`] = true,
@@ -177,11 +357,11 @@ Config.BlacklistedVehs = {
     [`titan`] = true,
     [`rhino`] = true,
     [`firetruck`] = true,
-    [`mule`] = true,
-    [`maverick`] = true,
+    [`mule`] = false,
+    [`maverick`] = false,
     [`blimp`] = true,
     [`airtug`] = true,
-    [`camper`] = true,
+    [`camper`] = false,
     [`hydra`] = true,
     [`oppressor`] = true,
     [`technical3`] = true,
@@ -234,7 +414,7 @@ Config.Objects = { -- for object removal
 
 -- You may add more than 2 selections and it will bring up a menu for the player to select which floor be sure to label each section though
 Config.Teleports = {
-    [1] = {                   -- Elevator @ labs
+--[[    [1] = {                   -- Elevator @ labs
         [1] = {               -- up
             poly = { coords = vector3(3540.74, 3675.59, 20.99), heading = 167.5, length = 2, width = 2 },
             allowVeh = false, -- whether or not to allow use in vehicle
@@ -258,12 +438,12 @@ Config.Teleports = {
             allowVeh = false,
             label = '[E] Leave'
         }
-    }
+    }]]--
 }
 
 Config.CarWash = {
     dirtLevel = 0.1,                                                                                   -- threshold for the dirt level to be counted as dirty
-    defaultPrice = 20,                                                                                 -- default price for the carwash
+    defaultPrice = 50,                                                                                 -- default price for the carwash
     locations = {
         [1] = { coords = vector3(174.81, -1736.77, 28.87), length = 7.0, width = 8.8, heading = 359 }, -- South Los Santos Carson Avenue
         [2] = { coords = vector3(25.2, -1391.98, 28.91), length = 6.6, width = 8.2, heading = 0 },     -- South Los Santos Innocence Boulevard

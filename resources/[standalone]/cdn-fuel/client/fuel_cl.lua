@@ -568,9 +568,9 @@ AddEventHandler('onResourceStop', function(resource)
 			RopeUnloadTextures()
 			DeleteObject(Rope)
 		end
-		if Config.TargetResource == 'ox_target' then
-			exports.ox_target:removeGlobalVehicle('cdn-fuel:options:1')
-			exports.ox_target:removeGlobalVehicle('cdn-fuel:options:2')
+		if Config.TargetResource == 'qb-target' then
+			exports.qb_target:removeGlobalVehicle('cdn-fuel:options:1')
+			exports.qb_target:removeGlobalVehicle('cdn-fuel:options:2')
 		end
 		-- Remove Blips from map so they dont double up.
 		for i = 1, #GasStationBlips, 1 do
@@ -2588,7 +2588,7 @@ CreateThread(function()
 		"engine",
 	}
 
-	if Config.TargetResource == 'ox_target' then
+	if Config.TargetResource == 'qb-target' then
 		local options = {
 			[1] = {
 				name = 'cdn-fuel:options:1',

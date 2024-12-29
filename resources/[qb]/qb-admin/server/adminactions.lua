@@ -482,7 +482,7 @@ RegisterServerEvent("919-admin:server:SetMetaDataForPlayer", function(PlayerId, 
     if Config.Framework == "qbcore" or Config.Framework == "qbox" then
         local Player = QBCore.Functions.GetPlayer(PlayerId)
         Player.Functions.SetMetaData(Meta, Data)
-        TriggerClientEvent("qb-hud:client:update:needs", PlayerId, Player.PlayerData.metadata["hunger"], Player.PlayerData.metadata["thirst"])
+        TriggerClientEvent("ps-hud:client:update:needs", PlayerId, Player.PlayerData.metadata["hunger"], Player.PlayerData.metadata["thirst"])
     elseif Config.Framework == "esx" then
         TriggerClientEvent("esx_status:add",PlayerId,Meta,Data)
     end

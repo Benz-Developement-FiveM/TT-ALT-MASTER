@@ -73,7 +73,7 @@ function Framework.Client.RegisterTarget(entity, coords, garageId, vehicleType, 
     entity = createPedForTarget(coords)
   end
 
-  if (Config.Target == "auto" and GetResourceState("ox_target") == "started") or Config.Target == "ox_target" then
+  if (Config.Target == "auto" and GetResourceState("qb-target") == "started") or Config.Target == "qb-target" then
     exports.ox_target:addLocalEntity(entity, {
       {
         label = garageType == "impound" and Config.OpenImpoundPrompt or Config.OpenGaragePrompt,

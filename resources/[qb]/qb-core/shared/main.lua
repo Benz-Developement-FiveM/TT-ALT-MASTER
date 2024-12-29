@@ -5,8 +5,12 @@ local NumberCharset = {}
 
 QBShared.StarterItems = {
     ['phone'] = { amount = 1, item = 'phone' },
-    ['id_card'] = { amount = 1, item = 'id_card' },
     ['driver_license'] = { amount = 1, item = 'driver_license' },
+    ['skateboard'] = { amount = 1, item = 'skateboard' },
+    ['tosti'] = { amount = 10, item = 'tosti' },
+    ['water_bottle'] = { amount = 10, item = 'water_bottle' },
+    ['largemysterybox'] = { amount = 1, item = 'largemysterybox' },
+    ['lucky_7_ticket'] = { amount = 10, item = 'lucky_7_ticket' },
 }
 
 for i = 48, 57 do NumberCharset[#NumberCharset + 1] = string.char(i) end

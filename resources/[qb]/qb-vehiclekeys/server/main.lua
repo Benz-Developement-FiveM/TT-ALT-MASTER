@@ -34,6 +34,7 @@ end)
 RegisterNetEvent('qb-vehiclekeys:server:AcquireVehicleKeys', function(plate)
     local src = source
     GiveKeys(src, plate)
+    exports['sd_skills']:IncreasePlayerXP(source, 'LOCKPICKING', 150)
 end)
 
 RegisterNetEvent('qb-vehiclekeys:server:breakLockpick', function(itemName)
@@ -42,6 +43,7 @@ RegisterNetEvent('qb-vehiclekeys:server:breakLockpick', function(itemName)
     if not (itemName == 'lockpick' or itemName == 'advancedlockpick') then return end
     if exports['qb-inventory']:RemoveItem(source, itemName, 1, false, 'qb-vehiclekeys:server:breakLockpick') then
         TriggerClientEvent('qb-inventory:client:ItemBox', source, QBCore.Shared.Items[itemName], 'remove')
+        exports['sd_skills']:DecreasePlayerXP(source, 'LOCKPICKING', 50)
     end
 end)
 

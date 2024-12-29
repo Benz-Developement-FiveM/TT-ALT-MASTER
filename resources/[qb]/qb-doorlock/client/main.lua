@@ -463,6 +463,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
         -- Determine which coordinates to face based on door data
         local coordsToFace = closestDoor.data.doors and closestDoor.data.doors[1].objCoords or closestDoor.data.objCoords
         TaskTurnPedToFaceCoord(playerPed, coordsToFace.x, coordsToFace.y, coordsToFace.z, 0)
+		exports['sd_skills']:IncreasePlayerXP(source, 'LOCKPICKING', 150)
         -- Wait for the ped to turn towards the door
         Wait(300)
         local count = 0
@@ -480,10 +481,12 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
             if chanceToRemove then
                 TriggerServerEvent("qb-doorlock:server:removeLockpick", "advancedlockpick")
                 TriggerEvent('qb-inventory:client:ItemBox', QBCore.Shared.Items["advancedlockpick"], "remove")
+				exports['sd_skills']:DecreasePlayerXP(source, 'LOCKPICKING', 50)
             end
         else
             TriggerServerEvent("qb-doorlock:server:removeLockpick", "lockpick")
             TriggerEvent('qb-inventory:client:ItemBox', QBCore.Shared.Items["lockpick"], "remove")
+			exports['sd_skills']:DecreasePlayerXP(source, 'LOCKPICKING', 50)
         end
     end
 end)

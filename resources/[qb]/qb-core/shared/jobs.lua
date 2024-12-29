@@ -11,6 +11,12 @@ QBShared.Jobs = {
 	garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Collector', payment = 50 } } },
 	vineyard = { label = 'Vineyard', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Picker', payment = 50 } } },
 	hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Sales', payment = 50 } } },
+	butcher = { label = 'Butcher', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Factory Worker', payment = 50 } } },
+	farmer = { label = 'Farmer', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Farmer', payment = 50 } } },
+	lumberjack = { label = 'Lumberjack', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Lumberjack', payment = 50 } } },
+	mining = { label = 'Miner', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Miner', payment = 50 } } },
+	airport = { label = 'Airport Pilot', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Airport Pilot', payment = 50 } } },
+
 
 	police = {
 		label = 'Law Enforcement',
@@ -48,6 +54,19 @@ QBShared.Jobs = {
 			['2'] = { name = 'Business Sales', payment = 100 },
 			['3'] = { name = 'Broker', payment = 125 },
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+		},
+	},
+	taco = {
+		label = 'Taco Hut',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Janitor', payment = 30 },
+			['1'] = { name = 'Employee', payment = 40 },
+			['2'] = { name = 'Sr-Employee', payment = 50 },
+			['3'] = { name = 'Ast-Manager', payment = 60 },
+			['4'] = { name = 'Manager', isboss = true, payment = 75 },
+			['5'] = { name = 'CEO', isboss = true, payment = 90 },
 		},
 	},
 	taxi = {

@@ -234,7 +234,7 @@ Here are some preconfigured shop items if you wish to put them in the shop. (The
 You will most likely have to change the slot it is in for it to work properly!
 <br><br>
 
-### QB-Target Issue Fix 
+### qb-target Issue Fix 
 
 There is a **possible** issue with *qb-target* if you are using the *Config.GlobalVehicleOptions* or *Config.TargetBones* options. 
 <br>
@@ -267,14 +267,14 @@ Firstly, this option will have to be added to your *Config.TargetBones* under th
 
 *Here is an example of how to add this option:*
 
-![Step5part33 QB-Target](https://i.imgur.com/UOgPJRi.png)
+![Step5part33 qb-target](https://i.imgur.com/UOgPJRi.png)
 <br> 
 *This is **specifically** for the "**boot**" bone, but, add it on which bone you are having trouble with.*
 
 <br>
 <br>
 
-*Next, we'll add this simple Function & Export into our QB-Target in the Functions() area:*
+*Next, we'll add this simple Function & Export into our qb-target in the Functions() area:*
 
 ```Lua
 local function AllowRefuel(state, electric) 
@@ -303,7 +303,7 @@ end exports('AllowRefuel', AllowRefuel)
 
 <br> 
 
-Lastly, add the following to the top of your _init.lua_ in QB-Target:
+Lastly, add the following to the top of your _init.lua_ in qb-target:
 ```
 local Allowrefuel = false
 local AllowElectricRefuel = false

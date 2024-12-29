@@ -102,10 +102,6 @@ client_scripts {
     -- DLC After Hours
     , "dlc_afterhours/nightclubs.lua"
 
-    -- DLC Diamond Casino (Requires forced build 2060 or higher)
-    , "dlc_casino/casino.lua"
-    , "dlc_casino/penthouse.lua"
-
     -- DLC Cayo Perico Heist (Requires forced build 2189 or higher)
     , "dlc_cayoperico/base.lua"
     , "dlc_cayoperico/nightclub.lua"

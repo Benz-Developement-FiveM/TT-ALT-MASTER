@@ -110,7 +110,7 @@ local Translations = {
         sit_in_vehicle = 'Sätt i fordon',
         open_inv = 'Öppna Inventory',
         give_clothing_menu = 'Ge Klädmenyn',
-        hud_dev_mode = 'Dev Mode (qb-hud)',
+        hud_dev_mode = 'Dev Mode (ps-hud)',
     },
     desc = {
         admin_options_desc = 'Misc. Admin Alternativ',
