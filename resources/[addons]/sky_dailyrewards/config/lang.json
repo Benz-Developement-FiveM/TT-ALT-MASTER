@@ -1,0 +1,20 @@
+{
+  "title": "DAILY REWARDS",
+  "level": "DAY %day%",
+  "currency": "%csh%$",
+  "nextRewardIn": "NEXT REWARD IN %tme%",
+  "claimYourReward": "CLAIM YOUR REWARD",
+  "notifications": {
+    "streak": {
+      "title": "YOU LOST YOUR STREAK",
+      "description": "You don't claimed your reward yesterday, if you dont buy a skip your streak will be lost and you have to start over again.",
+      "skip": "SKIP FOR %cns% COINS",
+      "lose": "LOSE STREAK"
+    },
+    "claimed": {
+      "title": "YOU CLAIMED %rwd%",
+      "description": "Congratulations you succesfully claimed your daily reward, come back tomorrow to get your next reward.",
+      "okay": "OKAY"
+    }
+  }
+}

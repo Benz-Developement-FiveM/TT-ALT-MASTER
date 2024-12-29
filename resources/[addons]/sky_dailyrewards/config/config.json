@@ -1,0 +1,44 @@
+{
+  "esxTrigger": "esx:getSharedObject",
+  "qbCore": true,
+  "devMode": false,
+  "discordLogs": {
+    "skipped": "https://discord.com/api/webhooks/",
+    "rewardClaimed": "https://discord.com/api/webhooks/",
+    "abuse": "https://discord.com/api/webhooks/"
+  },
+  "keyMapping": {
+    "use": true,
+    "defaultKey": "f10"
+  },
+  "skipWithCoins": {
+    "use": false,
+    "price": 10
+  },
+  "vehiclePlate": {
+    "useSpace": true,
+    "letters": 3,
+    "numbers": 3
+  },
+  "style": {
+    "numberFormat": "en-EN",
+    "background": {
+      "color": "radial-gradient(25.31% 49.59% at 50% 50%, #09081B 0%, rgba(9, 8, 27, 0.9) 100%)",
+      "opacity": 1
+    },
+    "rewards": {
+      "normal": {
+        "background": "rgba(5, 168, 250, 0.4)",
+        "inner": "rgba(5, 168, 250, 0.4)"
+      },
+      "long": {
+        "background": "rgba(121, 38, 255, 0.4)",
+        "inner": "rgba(121, 38, 255, 0.4)"
+      },
+      "square": {
+        "background": "rgba(250, 225, 5, 0.4)",
+        "inner": "rgba(250, 225, 5, 0.4)"
+      }
+    }
+  }
+}

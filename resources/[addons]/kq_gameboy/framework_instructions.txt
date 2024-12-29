@@ -1,0 +1,7 @@
+If you want to use this script with an item make sure to add the items to your database/config
+Then proceed to enable the framework in the config.lua file
+
+
+Client files are obfuscated to ensure script protection even though most of the logic is in the UI which isn't obfuscated.
+
+If you have any questions feel free to join our discord https://discord.gg/fZsyam7Rvz

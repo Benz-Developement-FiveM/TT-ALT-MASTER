@@ -1,0 +1,20 @@
+{
+  "title": "DAILY REWARDS",
+  "level": "TAG %day%",
+  "currency": "%csh%$",
+  "nextRewardIn": "NÄCHSTE BELOHNUNG IN %tme%",
+  "claimYourReward": "NEHME DEINE BELOHNUNG",
+  "notifications": {
+    "streak": {
+      "title": "DU HAST DEINE STREAK VERLOREN",
+      "description": "Du hast deine Belohnung gestern nicht in eingesammelt. Wenn du keinen Skip kaufst, geht deine Streak verloren und du musst wieder von vorne anfangen.",
+      "skip": "SKIP FÜR %cns% COINS",
+      "lose": "STREAK VERLIEREN"
+    },
+    "claimed": {
+      "title": "DU BEKOMMST %rwd%",
+      "description": "Glückwunsch, du hast deine tägliche Belohnung eingesammelt. Komme morgen wieder, um deine nächste Belohnung zu erhalten.",
+      "okay": "OKAY"
+    }
+  }
+}

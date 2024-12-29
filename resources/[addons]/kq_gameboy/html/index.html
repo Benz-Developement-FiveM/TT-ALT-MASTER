@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="UI-CONTAINER">
+    <div class="gameboy-body">
+        <div class="screen">
+            <button id="games-btn" class="games-btn">GAMES</button>
+            <div class="games-tab">
+                <div class="row">
+                    <div class="game" game="snake">
+                        <label>HYPER SNAKE</label>
+                    </div>
+                    <div class="game" game="mario">
+                        <label>MARIO BROS INFINITE</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="game" game="flappy_bird">
+                        <label>FLAPPY BIRD</label>
+                    </div>
+                    <div class="game" game="2048">
+                        <label>2048</label>
+                    </div>
+                </div>
+            </div>
+            <div id="game-screen" class="game-screen"></div>
+            <div id="mario-screen" class="game-screen"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+
+        function setScreenSize() {
+            const screen = $('.screen');
+            const height = screen.height();
+            const width = screen.width();
+
+            const baseline = {
+                x: 401.76,
+                y: 324,
+            }
+            
+            $('.game-screen').css('transform', 'scale(' + width / baseline.x + ',' + height / baseline.y + ')');
+        }
+        setScreenSize();
+
+        $('.game').each(function() {
+           $(this).css('background-image', 'url("thumbnails/' + $(this).attr('game') + '.png")');
+        });
+
+        $(document).on('click', '#games-btn', function(){
+            var el = $('#game-screen')[0];
+            var elClone = el.cloneNode(true);
+
+            el.parentNode.replaceChild(elClone, el);
+            $('.games-tab').fadeIn(250);
+            $(".game-screen").fadeOut(250);
+        });
+
+        $(document).on('click', '.game', function() {
+            const game = $(this).attr('game');
+            $('.games-tab').fadeOut(250);
+            $('#mario-screen').fadeOut(250);
+
+            loadGame(game);
+            if (game === 'mario') {
+                $('#mario-screen').fadeIn(500);
+            } else {
+                $('#game-screen').fadeIn(500);
+            }
+        });
+
+
+        let marioLoaded = false;
+        function loadGame(game) {
+            const gameScreen = $('#game-screen');
+
+            gameScreen.empty();
+
+            switch (game) {
+                case 'snake':
+                    gameScreen.load("games/snake.html");
+                    break;
+                case 'mario':
+                    if (!marioLoaded) {
+                        $('#mario-screen').load("games/mario/main.html");
+                        marioLoaded = true;
+                    }
+                    break;
+                case 'flappy_bird':
+                    gameScreen.load("games/flappy_bird/index.html");
+                    break;
+                case '2048':
+                    gameScreen.load("games/2048/index.html");
+                    break;
+            }
+        }
+
+
+
+        window.addEventListener('message', (event) => {
+            if (event.data.event === 'show') {
+                toggleUI(event.data.state)
+            }
+        });
+
+
+        function toggleUI(state) {
+            if (state) {
+                $(".UI-CONTAINER").css('display', 'flex');
+                $("body").animate({
+                    marginTop: "10vh"
+                }, 500);
+            } else {
+                $("body").animate({
+                    marginTop: "150vh"
+                }, 500, function () {
+                    $(".UI-CONTAINER").hide();
+                });
+            }
+        }
+
+        $("body").animate({
+            marginTop: "150vh"
+        }, 500);
+
+        document.addEventListener('keyup', logKey);
+
+        function logKey(e) {
+            if (e.key === 'Escape' || e.key === 'Backspace') {
+                fetch(`https://kq_gameboy/CloseMenu`, {
+                    method: 'POST',
+                })
+            }
+        }
+
+        fetch(`https://kq_gameboy/NUILoaded`, {
+            method: 'POST',
+        })
+    });
+</script>

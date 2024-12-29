@@ -1,0 +1,154 @@
+:root {
+  --donorshop-background: #1f1f1fff;
+  --donorshop-item: #3d3d3dff;
+  --donorshop-item-hover: #333333ff;
+
+  --donorshop-text: #ffffff;
+  --donorshop-text-alert: #fb3640;
+  --donorshop-text-success: #23ce6b;
+  --donorshop-text-warning: #eecf6d;
+  --donorshop-text-muted: #666666ff;
+
+  --donorshop-link: #3772ff;
+
+  --davys-grey: #474747ff;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  background: transparent !important;
+}
+#position-wrapper {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 16px);
+  transform: translate(-50%, -50%);
+  width: auto;
+
+  display: none;
+}
+#promo-image {
+  background-image: url(../images/promo-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#promo-image-logo-wrapper {
+  backdrop-filter: blur(3px);
+}
+#promo-image-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Open Sans", sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #333333ff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #333333ff;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #666666ff;
+}
+#button-back {
+  display: none;
+}
+#button-checkout {
+  display: none;
+}
+
+@media only screen and (max-width: 1366px) {
+  #position-wrapper {
+    width: 60% !important;
+  }
+}
+
+#user-information-header {
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  height: 66px;
+
+  border-top-left-radius: 0.2rem !important;
+}
+#user-information-footer {
+  border-bottom-left-radius: 0.2rem !important;
+}
+.ds-bg-dark {
+  background-color: var(--donorshop-background);
+}
+.ds-bg-item {
+  background-color: var(--donorshop-item);
+}
+.item-hover {
+  background-color: var(--donorshop-item);
+}
+.item-hover:hover {
+  background-color: var(--donorshop-item-hover);
+}
+.border-dark {
+  border-color: var(--donorshop-text-muted);
+}
+#user-information-space {
+  height: calc(100% - 132px);
+}
+.ds-border {
+  border-color: rgba(0, 0, 0, 0.125) !important;
+}
+.cd-donatorshop-copy-button > svg {
+  pointer-events: none;
+}
+#user-information-alert {
+  position: relative;
+  height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#cd-donatorshop-pages {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.opacity-90 {
+  opacity: 0.9;
+}
+.pages-link:hover {
+  background-color: var(--donorshop-item);
+  cursor: pointer;
+}
+#vehicle-display > .card {
+  /* display:none; */
+  background-color: rgba(0, 0, 0, 0.8);
+
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+
+  transform: translate(0, -50%);
+}
+.progress-bar {
+  transition: all 5s ease !important;
+  transition-delay: 110ms !important;
+}
+.blur-on-lose-focus:not(:focus) {
+  color: transparent;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+#vehicle-footer {
+  position: relative;
+  top: 1rem;
+}
+#vehicle-footer > p {
+  text-align: center;
+}

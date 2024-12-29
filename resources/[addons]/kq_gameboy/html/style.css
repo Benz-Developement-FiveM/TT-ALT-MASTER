@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Nunito";
+    src: url('fonts/nunito.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+    user-select: none;
+    overflow: hidden;
+}
+
+.UI-CONTAINER {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.gameboy-body {
+    width: 48vh;
+    height: 80vh;
+    background-image: url("img/gameboy.png");
+    transition-duration: 0.5s;
+    background-size: contain;
+    justify-content: center;
+    display: flex;
+}
+
+.screen {
+    background-color: rgb(5, 7, 9);
+    width: 37.2vh;
+    height: 30vh;
+    position: absolute;
+    margin-top: 5vh;
+    border-radius: 0.25vh;
+    padding-top: 2.25vh;
+}
+
+.games-btn {
+    position: absolute;
+    width: 7vh;
+    height: 2vh;
+    background-color: #32cd32;
+    border-radius: 1vh;
+    margin: -2vh 0.25vh 0.25vh;
+
+    outline: 0;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.5vh;
+    transition-duration: 0.15s;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.games-btn:hover{
+    background-color: #28a128;
+}
+
+.game-screen {
+    transform-origin: top left;
+    width: 340px;
+    height: 290px;
+    overflow: hidden;
+    position: absolute;
+    top: 2.25vh;
+    left: 1.25vh;
+    padding: 1vh;
+    display: none;
+}
+
+.games-tab {
+    display: flex;
+    width: calc(100% - 3vh);
+    height: calc(100% - 2vh);
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    padding: 1vh;
+    margin-left: 5px;
+}
+
+.row {
+    width: 100%;
+    height: 9vh;
+}
+
+.game {
+    margin: 0.5vh;
+    width: calc(50% - 1.3vh);
+    height: 8vh;
+    background-color: cadetblue;
+    z-index: 1;
+    background-image: url("img/gameboy.png");
+    background-size: cover;
+    display: inline-block;
+    transition-duration: 0.1s;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game label {
+    color: white;
+    font-size: 1.1vh;
+    margin: 0.5vh;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4fa901;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #428705;
+}

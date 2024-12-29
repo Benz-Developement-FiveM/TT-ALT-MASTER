@@ -1,0 +1,242 @@
+[
+  {
+    "label": "$500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "500"
+    }
+  },
+  {
+    "label": "$1000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "1000"
+    }
+  },
+  {
+    "label": "$1500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "1500"
+    }
+  },
+  {
+    "label": "$2000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "2000"
+    }
+  },
+  {
+    "label": "$2500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "2500"
+    }
+  },
+  {
+    "label": "$3000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "3000"
+    }
+  },
+  {
+    "label": "$3500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "3500"
+    }
+  },
+  {
+    "label": "$4000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "4000"
+    }
+  },
+  {
+    "label": "$4500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "4500"
+    }
+  },
+  {
+    "label": "$5000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "5000"
+    }
+  },
+  {
+    "label": "$5500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "5500"
+    }
+  },
+  {
+    "label": "$6000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "6000"
+    }
+  },
+  {
+    "label": "$6500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "6500"
+    }
+  },
+  {
+    "label": "$7000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "7000"
+    }
+  },
+  {
+    "label": "$7500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "7500"
+    }
+  },
+  {
+    "label": "$8000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "8000"
+    }
+  },
+  {
+    "label": "$8500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "8500"
+    }
+  },
+  {
+    "label": "$9000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "9000"
+    }
+  },
+  {
+    "label": "$9500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "9500"
+    }
+  },
+  {
+    "label": "$10000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "10000"
+    }
+  },
+  {
+    "label": "$10500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "10500"
+    }
+  },
+  {
+    "label": "$11000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "11000"
+    }
+  },
+  {
+    "label": "$11500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "11500"
+    }
+  },
+  {
+    "label": "$12000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "12000"
+    }
+  },
+  {
+    "label": "$12500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "12500"
+    }
+  },
+  {
+    "label": "$13000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "13000"
+    }
+  },
+  {
+    "label": "$13500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "13500"
+    }
+  },
+  {
+    "label": "$14000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "14000"
+    }
+  },
+  {
+    "label": "$14500",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "14500"
+    }
+  },
+  {
+    "label": "$15000",
+    "img": "cash",
+    "reward": {
+      "type": "money",
+      "amount": "15000"
+    }
+  }
+]

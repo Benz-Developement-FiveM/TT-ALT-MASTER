@@ -1,0 +1,60 @@
+<body>
+<canvas id="canvas" width="350" height="300">
+    <p>Your browser does not support the canvas element.</p>
+</canvas>
+
+<!-- Enjine Includes -->
+<script src="games/mario/Enjine/core.js"></script>
+<script src="games/mario/Enjine/gameCanvas.js"></script>
+<script src="games/mario/Enjine/keyboardInput.js"></script>
+<script src="games/mario/Enjine/resources.js"></script>
+<script src="games/mario/Enjine/drawable.js"></script>
+<script src="games/mario/Enjine/state.js"></script>
+<script src="games/mario/Enjine/gameTimer.js"></script>
+<script src="games/mario/Enjine/camera.js"></script>
+<script src="games/mario/Enjine/drawableManager.js"></script>
+<script src="games/mario/Enjine/sprite.js"></script>
+<script src="games/mario/Enjine/spriteFont.js"></script>
+<script src="games/mario/Enjine/frameSprite.js"></script>
+<script src="games/mario/Enjine/animatedSprite.js"></script>
+<script src="games/mario/Enjine/collideable.js"></script>
+<script src="games/mario/Enjine/application.js"></script>
+
+<!-- Actual game code -->
+<script src="games/mario/code/setup.js"></script>
+<script src="games/mario/code/spriteCuts.js"></script>
+<script src="games/mario/code/level.js"></script>
+<script src="games/mario/code/backgroundGenerator.js"></script>
+<script src="games/mario/code/backgroundRenderer.js"></script>
+<script src="games/mario/code/improvedNoise.js"></script>
+<script src="games/mario/code/notchSprite.js"></script>
+<script src="games/mario/code/character.js"></script>
+<script src="games/mario/code/levelRenderer.js"></script>
+<script src="games/mario/code/levelGenerator.js"></script>
+<script src="games/mario/code/spriteTemplate.js"></script>
+<script src="games/mario/code/enemy.js"></script>
+<script src="games/mario/code/fireball.js"></script>
+<script src="games/mario/code/sparkle.js"></script>
+<script src="games/mario/code/coinAnim.js"></script>
+<script src="games/mario/code/mushroom.js"></script>
+<script src="games/mario/code/particle.js"></script>
+<script src="games/mario/code/fireFlower.js"></script>
+<script src="games/mario/code/bulletBill.js"></script>
+<script src="games/mario/code/flowerEnemy.js"></script>
+<script src="games/mario/code/shell.js"></script>
+
+<script src="games/mario/code/titleState.js"></script>
+<script src="games/mario/code/loadingState.js"></script>
+<script src="games/mario/code/loseState.js"></script>
+<script src="games/mario/code/winState.js"></script>
+<script src="games/mario/code/mapState.js"></script>
+<script src="games/mario/code/levelState.js"></script>
+
+<script src="games/mario/code/music.js"></script>
+
+<script>
+    $(document).ready(function () {
+        new Enjine.Application().Initialize(new Mario.LoadingState(), 320, 240)
+    });
+</script>
+</body>
